@@ -9,5 +9,14 @@ def show_all_buses():
     for bus in bus_lines:
         print(bus)
 
+def search_bus(route_name):
+    results = [bus for bus in bus_lines if route_name.lower() in bus.lower()]
+    print("Search Results:")
+    for bus in results:
+        print(bus)
+
 if __name__ == "__main__":
     show_all_buses()
+    search_bus("Route 3")
+    
+
