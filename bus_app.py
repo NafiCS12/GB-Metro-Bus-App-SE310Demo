@@ -15,8 +15,13 @@ def search_bus(route_name):
     for bus in results:
         print(bus)
 
+
+favorites = []
+
+def add_favorite(bus):
+    favorites.append(bus)
+    print(f"{bus} added to favorites")
+
 if __name__ == "__main__":
     show_all_buses()
-    search_bus("Route 3")
-    
-
+    add_favorite("Route 1 - Main Street")
